@@ -1,0 +1,12 @@
+.login-menu {
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../assets/images/Background.png');
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,121 @@
+.body {
+	margin: 0;
+	padding: 0;
+	font-family: 'cinzel', sans-serif;
+
+}
+
+.home {
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../assets/images/Background.png');
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+  
+.top-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+}
+
+.menu {
+	position: relative;
+	transition: 0.3s ease;
+}
+
+.menu img {
+	width: 45px;
+	cursor: pointer;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: -115%;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    transition: left 0.5s ease;
+    padding: 2rem 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;	
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        width: 100%;
+    }
+}
+
+.nav-bar.visible {
+    left: 0;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar li {
+    margin: 1.5rem 0;
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: 'Cinzel Black', serif;
+    text-align: center;
+}
+
+.nav-bar li:hover {
+    text-decoration: underline;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center
+}
+
+.top-right {
+	display: flex;
+	gap: 1rem;
+}
+
+.icon {
+	width: 45px;
+	cursor: pointer;
+}
+
+
+.main-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.start-button {
+	width: 50%;
+	height: auto;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.start-button:hover {
+	transform: scale(1.1);
+}
